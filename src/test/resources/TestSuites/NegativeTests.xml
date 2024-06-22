@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="NegativeTests" verbose="1">
+    <test name="NegativeTests">
+<!--        Execute by specific group in annotations-->
+<!--       <groups>
+           <run>
+               <include name="smokeTests"/>
+           </run>
+       </groups>-->
+
+        <classes>
+            <class name="com.herokuapp.theinternet.NegativeTests" >
+<!--               Include/exclude specific tests-->
+                <methods>
+                    <include name="incorrectPassword"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
